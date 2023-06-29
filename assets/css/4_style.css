@@ -20,6 +20,12 @@ section h1 {
     line-height: 40px;
 }
 
+.key {
+    font-family: sans-serif;
+    border: 2px black solid;
+    padding: 5px 10px;
+}
+
 .keyboard input {
     border: 2px black solid;
     margin: 10px;
@@ -78,9 +84,6 @@ section h1 {
     display: flex;
     justify-content: center;
 }
-#keys-append {
-    flex-wrap: wrap-reverse;
-}
 #keys-colors > div {
     width: 200px;
     height: 200px;
@@ -90,8 +93,11 @@ section h1 {
     transition: all .3s;
 }
 
-.key {
-    font-family: sans-serif;
-    border: 2px black solid;
-    padding: 5px 10px;
+#keys-append {
+    flex-wrap: wrap-reverse;
+}
+#keys-append:empty {
+    width: 200px;
+    height: 200px;
+    padding: 14px;    
 }
