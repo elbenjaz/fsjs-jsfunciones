@@ -1,0 +1,97 @@
+@import url('https://fonts.cdnfonts.com/css/azonix');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    text-align: center;
+    font-family: "Azonix", sans-serif;
+}
+
+section {
+    border: 1px #ddd solid;
+    margin: 20px;
+    padding: 20px;
+}
+
+section h1 {
+    line-height: 40px;
+}
+
+.keyboard input {
+    border: 2px black solid;
+    margin: 10px;
+}
+
+@media (min-width: 992px) {
+    .keyboard {
+        display: none;
+    }    
+}
+
+/* click */
+#click {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#click > div {
+    width: 200px;
+    height: 200px;
+    border: 4px black solid;
+    border-radius: 100%;
+    margin: 10px;
+    transition: all .3s;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#click > div::after {
+    font-family: "Font Awesome 6 Free";
+    font-size: 100px;
+    content: "\f0eb"; /* fa-lightbulb */
+}
+#click > div:nth-of-type(1) {
+    background-color: blue;
+    cursor: pointer;
+}
+#click > div:nth-of-type(2) {
+    background-color: red;
+}
+#click > div:nth-of-type(3) {
+    background-color: green;
+}
+#click > div:nth-of-type(4) {
+    background-color: yellow;
+}
+
+.lightbulb1 {
+    color: blue;
+}
+
+/* keys */
+#keys-colors,
+#keys-append {
+    display: flex;
+    justify-content: center;
+}
+#keys-append {
+    flex-wrap: wrap-reverse;
+}
+#keys-colors > div {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    background-color: white;
+    border: 4px black solid;
+    transition: all .3s;
+}
+
+.key {
+    font-family: sans-serif;
+    border: 2px black solid;
+    padding: 5px 10px;
+}
